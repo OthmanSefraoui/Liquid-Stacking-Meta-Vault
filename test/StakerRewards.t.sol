@@ -210,7 +210,6 @@ contract StakerRewardsTest is Test {
         assertFalse(isActive, "Vault1 should be inactive");
     }
 
-    
     function test_twoVaultRewardsClaiming() public {
         // Initialize with clean timestamp
         vm.warp(1000);

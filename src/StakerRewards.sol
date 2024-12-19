@@ -218,8 +218,6 @@ contract StakerRewards is Ownable, ReentrancyGuard {
         return pendingRewards;
     }
 
-    
-
     function claimFinalRewards() external nonReentrant returns (uint256) {
         VaultInfo storage vault = vaults[msg.sender];
         GlobalRewards storage rewards = globalRewards;
